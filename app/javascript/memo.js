@@ -5,7 +5,7 @@ function memo() {
     const XHR = new XMLHttpRequest();
     XHR.open( "POST", "/posts", true );
     XHR.responseType = "json";
-    XHR.send(formDate);
+    XHR.send(formData);
     XHR.onload = () => {
       const item = XHR.response.post;
       const list =     document.getElementById("list");
